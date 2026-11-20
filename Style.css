@@ -1,1 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf3;
+    color: #4b2e1e;
+}
+
+/* Header */
+header {
+    background-color: #6f3e20;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffc66d;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #f4c27a, #ffe2ae);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #6f3e20;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* Produk */
+.produk {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.produk h2,
+.tentang h2,
+.kontak h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.produk-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.emoji {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.harga {
+    color: #b66a28;
+    font-weight: bold;
+}
+
+/* Tentang */
+.tentang {
+    background-color: #f3dfc5;
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.tentang p {
+    line-height: 1.8;
+}
+
+/* Kontak */
+.kontak {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.kontak p {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #6f3e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Error Page */
+.error-container {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.error-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.error-container h1 {
+    margin-bottom: 15px;
+}
+
+.error-container p {
+    margin-bottom: 25px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .produk-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
